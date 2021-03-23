@@ -4,11 +4,8 @@ import subprocess
 import os
 import sys
 
-# gets the current user account directory
-userprofile = os.getenv('UserProfile')
-
-# sets the location for the events dump file
-dump_file_path = str(userprofile + "\\AppData\\Local\\Temp")
+# gets the current user account temp directory
+file_path = os.getenv('Temp')
 
 
 # runs a powershell command given an argument
