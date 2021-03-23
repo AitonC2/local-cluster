@@ -2,7 +2,6 @@
 # In order to get the desired information from the command line
 import subprocess
 import os
-import sys
 
 # gets the current user account temp directory
 file_path = os.getenv('Temp')
