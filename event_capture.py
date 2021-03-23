@@ -8,7 +8,8 @@ import sys
 userprofile = os.getenv('UserProfile')
 
 # sets the location for the events dump file
-dump_file = str(userprofile + "\\AppData\\Local\\Temp")
+dump_file_path = str(userprofile + "\\AppData\\Local\\Temp")
+
 
 # runs a powershell command given an argument
 def powershell_command(arg):
