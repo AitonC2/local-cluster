@@ -18,8 +18,5 @@ def system_warnings():
 def system_information():
     dump_file = str(evt_c.file_path +"\\system_info.dmp")
     cmd_arguments = "Get-EventLog -LogName System -EntryType Information | Format-Table -AutoSize -wrap | Out-File " + "'" + dump_file + "'"
-    print(cmd_arguments)
     evt_c.powershell_command(cmd_arguments)
 
-
-system_errors()
